@@ -61,7 +61,7 @@ docker ps
 > Look for your container name (e.g., `eager_herschel`), then:
 
 ```bash
-docker logs -f <your_container_name> 2>&1 | tee -a $HOME/prover.log
+docker logs -f <ur container name> | tee -a /root/prover.log
 ```
 
 Detach with `Ctrl + B`, then `D`
