@@ -55,6 +55,8 @@ CHAT_ID="your_chat_id"
 ```bash
 chmod +x prover_alert.sh
 tmux new -s logwatch
+```
+```
 docker ps
 ```
 
@@ -72,6 +74,8 @@ Detach with `Ctrl + B`, then `D`
 
 ```bash
 tmux new -s alert
+```
+```
 ./prover_alert.sh
 ```
 
