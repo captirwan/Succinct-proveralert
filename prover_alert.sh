@@ -24,15 +24,16 @@ watch_log() {
   tail -n 0 -F "$LOG_FILE" | while read -r line; do
     if echo "$line" | grep -q "Proof fulfillment submitted"; then
       TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
-      send_telegram "🎯 <b>Proof fulfillment submitted</b>\n🕒 $TIMESTAMP\n<code>${line}</code>"
+      MESSAGE="🎯 <b>Proof fulfillment submitted!</b> 🕒 $TIMESTAMP"
+      send_telegram "$MESSAGE"
 
-      # Tambah counter
       COUNT=$(cat "$COUNT_FILE")
       COUNT=$((COUNT + 1))
       echo "$COUNT" > "$COUNT_FILE"
     fi
   done
 }
+
 
 # === FUNCTION: Kirim summary per jam ===
 hourly_summary() {
