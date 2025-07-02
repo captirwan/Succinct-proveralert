@@ -28,8 +28,8 @@ A lightweight Telegram alert system for Succinct provers. No root access needed.
 
 - Create a bot via [@BotFather](https://t.me/BotFather)
 - Get your `BOT_TOKEN`
-- Go to @userinfobot and /start it
-- U will see ur chatid
+- now find ur chat ID , Go to telegram and use @userinfobot and /start it
+- U will see ur "chat_id"
 
 ---
 
